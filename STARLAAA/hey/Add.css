@@ -1,0 +1,120 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+.body{
+	background:#fff
+}
+.contact-us{
+	background:white;
+	border: #1FA907 4px solid;
+	width:350px;
+	height:560px;
+	padding:40px;
+	margin:20px auto;
+	border-radius: 20px;
+	position:relative;
+	box-shadow: 0px 6px 45px -8px;
+}
+
+.contact-us .images{
+	margin-top:15px;
+	text-align:center;
+}
+.contact-us .images hr{
+	text-align:center;
+	width:240px;
+	margin:0px 53px;
+}
+.contact-us h5{
+	text-align:center;
+	font-size:19px;
+}
+.contact-us h2{
+	text-align:center;
+	font-size:23px;
+	padding:8px;
+}
+.btn-normal{
+	position:absolute;
+	top:65%;
+	left:20%;
+	cursor:pointer; 
+}
+.btn-round {
+  margin: 10px;
+  border-radius: 30%;
+  
+}
+
+.btn-wide {
+  width: 250px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-normal {
+  box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px green;
+}
+
+.btn-pressed {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px green inset;
+}
+
+.btn-normal:active {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px green inset;
+  font-size: 18px;
+}
+
+.btns i{
+	margin:6px;
+}
+
+
+
+.button12-normal{
+	position:absolute;
+	top:77%;
+	left:20%;
+	cursor:pointer; 
+}
+.button12-round {
+  margin: 10px;
+  border-radius: 30%;
+  
+}
+
+.button12-wide {
+  width: 250px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button12-normal {
+  box-shadow: -3px -3px 7px #f5f5f5, 3px 3px 7px green;
+}
+
+.button12-pressed {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px green inset;
+}
+
+.button12:active {
+  box-shadow: -3px -3px 7px #f5f5f5 inset, 3px 3px 7px green inset;
+  font-size: 18px;
+}
+
+
+
