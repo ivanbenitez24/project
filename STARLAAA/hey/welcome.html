@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="welcome.css">
+	<link rel ="stylesheet" href="E:\STARLAAA\hey\js\FONTAWESOME\css\all.css">
+    <title>Welcome</title>
+	<script src="E:\STARLAAA\hey\js\jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  function countChecked() {
+    var tCount = $("input:checked").length;
+      $(".totalchecked").text( tCount + ' Absent');
+  }
+  countChecked();
+  var tCheck = $(".totalchecked");
+  $(tCheck).next().find(":checkbox").click(countChecked);
+  
+  var dt = new Date();
+	document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+	
+	function selectRow(){
+			var radios = document.getElementsByName("select");
+			for( var i = 0; i < radios.length; i++ )
+			{
+				radios[i].onclick= function()
+				{ 
+					var el = document.getElementById("first-tr");
+					
+					while (el = el.nextSibling)
+					{
+						if(el.tagName === "TR")
+						{
+							el.classList.remove("selected");
+						}
+					}
+					
+					this.parentElement.parentElement.classList.toggle("selected");
+				};
+			}
+		}
+		selectRow();
+		
+		$(document).ready(function(){
+				$('.click').click(function(){
+					$('.popup_box').css({
+						"opacity":"1", "pointer-events":"auto"
+					});
+				});
+				$('.btn1').click(function(){
+					$('.popup_box').css({
+						"opacity":"0", "pointer-events":"none"
+					});
+				});
+				$('.btn2').click(function(){
+					$('.popup_box').css({
+						"opacity":"0", "pointer-events":"none"
+				});
+				
+				});
+			});	
+	
+	});
+	
+</script>
+<style>
+		tr{transition: all ease-in-out .1s}
+		.selected{background-color:limegreen;color:#fff;font-weight:bold}
+		
+	</style>
+
+</head>
+<body>
+
+<form class="box">
+	
+<center>
+		
+<img src="logo.png" class="logo.png" width = "30%">
+		<h1>St.Jude College<h1>
+		<h3>Phinma Education Network</h3>
+		<hr color= " black" width = "250px" >
+	<form action="post">
+		<table border="2">
+		<div>
+		<h2>SECTION: BSIT-1B</h2>
+		</div>
+		<tr >
+			<th>No.</th>
+			<th>SURNAME</th>
+			<th>GIVENNAME</th>
+		</tr>	
+		<p style="font-size:23px;">Date: <span id="datetime"></span></p>
+		<div style="font-size:23px;" class="totalchecked">0 Presents</div>
+		<tr >
+			<td><input type="checkbox" name="select"> 01.</td>
+			<td>ABCEDE </td>
+			<td>CHRISTOPHER</td>
+		</tr>
+		<tr> 	
+			<td><input type="checkbox" name="select" > 02.</br></td> 	
+			<td>ARAQUIN </td>
+			<td>WENNIE</td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 03.</td> 
+			<td>ASUNCION </td>
+			<td>CHARLES</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 04.</td>
+			<td>BALABIS </td>
+			<td>JEROME</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 05.</td> 
+			<td>BALAQUI </td>
+			<td>BALAQUI </td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 06.</td>
+			<td>BALASABAS </td>
+			<td>LAWRENCE</td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 07.</td> 
+			<td>BENITEZ </td>
+			<td>IVAN AMER</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 08.</td> 
+			<td>BLANCO </td>
+			<td>JHORMIE</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 09.</td> 
+			<td>CAASI </td>
+			<td>REYNNIEL</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 10.</td> 
+			<td>CARAG </td>
+			<td>JHONA</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 11.</td> 
+			<td>CATER </td>
+			<td>JEFF</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 12.</td> 
+			<td>CRISTAL </td>
+			<td>LOVELY </td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 13.</td> 	
+			<td>CRUZ </td>
+			<td>ATHENS JUSTINE</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 14.</td> 
+			<td>DALIOAN </td>
+			<td>PATRICK JOHN</td>			
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 15.</td>
+			<td>DELA CRUZ</td>
+			<td>CRISTAL</td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 16.</td> 
+			<td>DORONI </td>
+			<td>ALDRENE</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 17.</td>
+			<td>EPAN </td>
+			<td>JOHN BRIAN</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 18.</td> 
+			<td>FERNANDO </td>
+			<td>SHAN LLOYD</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 19.</td>
+			<td>FORTIT </td>
+			<td>STEPHEN</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 20.</td> 
+			<td>FRIAS </td>
+			<td>JOHN REX</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 21.</td> 
+			<td>GO </td>
+			<td>HAROLD</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 22.</td> 
+			<td>HIPOLITO </td>
+			<td>CHRISTIAN</td>
+		</tr>
+		<tr> 		
+			<td><input type="checkbox" name="select"> 23.</td> 	
+			<td>JOSE </td>
+			<td>ELAINE JEAN</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 24.</td> 	
+			<td>MADID </td>
+			<td>HATTA</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 25.</td> 
+			<td>MALACAS </td>
+			<td>STEPHEN JAMES</td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 26.</td>
+			<td>MANALANG </td>
+			<td>STANIEL </td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 27.</td>
+			<td>MARCELO </td>
+			<td>NIKKI</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 28.</td>
+			<td>MARINAS </td>
+			<td>EDRIC CHARLES</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 29.</td>
+			<td>MIRAS </td>
+			<td>LEAROSE</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox" name="select"> 30.</td>
+			<td>NOVIDA </td>
+			<td>MARK ANTHONY</td>
+		</tr>
+		<tr> 	
+			<td><input type="checkbox" name="select"> 31.</td> 
+			<td>ODIAS </td>
+			<td>KENNETH</td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 32.</td>
+			<td>QUINTOS </td>
+			<td>JELO JASPER</td>			
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 33.</td>
+			<td>REYES </td>
+			<td>CARL STEVEN</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 34.</td>
+			<td>RIVERA </td>
+			<td>ALJERO</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 35.</td>
+			<td>SAN ANDRES</td>
+			<td>DESNYL </td>
+		</tr> 
+		<tr> 
+			<td><input type="checkbox" name="select"> 36.</td>
+			<td>SANTOS </td>
+			<td>EUGENIO III</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 37.</td>
+			<td>SANTOS </td>
+			<td>MARK KENNETH</td>
+		</tr> 	
+		<tr> 		
+			<td><input type="checkbox" name="select"> 38.</td>
+			<td>SIDIANGCO </td>
+			<td>KEN</td>
+		</tr> 	
+		<tr> 	
+			<td><input type="checkbox" name="select"> 39.</td>
+			<td>TULIPAS </td>
+			<td>AARON</td>
+		</tr> 
+		<tr> 	
+			<td><input type="checkbox" name="select"> 40.</td>
+			<td>YAMSON </td>
+			<td>ROILAN</td>
+		</tr> 		
+		
+	</table>
+	</form>
+	<br><br><br><br>
+	<br>
+	<a href="#" class="click">OK</a>
+		<div class="popup_box">
+			<i class="fas fa-exclamation"></i>
+			<h1>SAVED THIS SHEET?</h1>
+			<label>Are You Sure?</label>
+				<div class="btns">
+					<a href="welcome.html" class="btn1">Cancel</a>
+					<a href="opensaved.html" class="btn2">Proceed</a>
+				</div>
+		</div>
+	
+</form>
+	
+</center>
+</body>
+</html>
